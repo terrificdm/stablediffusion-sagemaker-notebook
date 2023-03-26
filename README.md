@@ -9,5 +9,7 @@
 
 > If you encounter error of "IsADirectoryError: [Errno 21] Is a directory: '/home/ec2-user/SageMaker/images/source/.ipynb_checkpoints" during training stage, you need to delete ".ipynb_checkpoints", then continue your training  
 
-> If you encounter error of "CUDA out of memory..." during training stage, you can simply restart the kernel of Jupyter Notebook, then start your training from the begining
+> If you encounter error of "CUDA out of memory..." during training stage, you can simply restart the kernel of Jupyter Notebook, then start your training from the begining  
 
+# lora_pti-stablediffusion-sagemaker-notebook  
+* Adding Lora-PTI training for Stable Diffusion, stay tuned...
