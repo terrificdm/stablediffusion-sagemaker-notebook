@@ -1,0 +1,35 @@
+# Lora training is basing on the method of DreamBooth+Caption(without using class_images to aviod over-fitting). Besides DreamBooth+Caption, Lora can also use other methods, such as DreamBooth+identifier+class and classic text2image fine tuning. Detailed info you can refer to https://github.com/kohya-ss/sd-scripts/blob/main/train_README-ja.md
+
+[general]
+enable_bucket = true
+shuffle_caption = true
+caption_extension = '.txt'
+keep_tokens = 0
+
+# DreamBooth style datasets
+[[datasets]]
+resolution = 512
+batch_size = 2
+
+  [[datasets.subsets]]
+  image_dir = './images/sample1'
+  num_repeats = 10
+
+#  [[datasets.subsets]]
+#  image_dir = './images/sample2'
+#  num_repeats = 10
+
+#  [[datasets.subsets]]
+#  is_reg = true
+#  image_dir = './images/reg'
+#  class_tokens = 'girl'
+#  num_repeats = 1  
+
+# fine tuning dataset
+#[[datasets]]
+#resolution = [768, 768]
+#batch_size = 2
+
+#  [[datasets.subsets]]
+#  image_dir = './images/sample3'
+#  metadata_file = './images/sample3/xxx_md.json'
