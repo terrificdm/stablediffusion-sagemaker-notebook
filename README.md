@@ -12,8 +12,8 @@
 > If you encounter error of "CUDA out of memory..." during training stage, you can simply restart the kernel of Jupyter Notebook, then start your training from the begining  
 
 # sd-lora-db-finetune-sagemaker-notebook 
-* Use [kohya-ss scripts}(https://github.com/kohya-ss/sd-scripts) for Lora fine tuning, which is probably the most popular method for Lora training
-* Example for person(character) trainingg using captions(aka filewords)
+* Use [kohya-ss scripts](https://github.com/kohya-ss/sd-scripts) for Lora fine tuning, which is probably the most popular method for Lora training
+* Example is person(character) trainingg using captions(aka filewords)
 * Training outputs(xxxx.safetensors) can be used directly for sdwebui
 * Check captions of image dataset before you prepare yours, trigger word for character is "wta"
 
