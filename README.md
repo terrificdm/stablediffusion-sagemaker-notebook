@@ -11,5 +11,11 @@
 
 > If you encounter error of "CUDA out of memory..." during training stage, you can simply restart the kernel of Jupyter Notebook, then start your training from the begining  
 
+# sd-lora-db-finetune-sagemaker-notebook 
+* Use [kohya-ss scripts}(https://github.com/kohya-ss/sd-scripts) for Lora fine tuning, which is probably the most popular method for Lora training
+* Example for person(character) trainingg using captions(aka filewords)
+
 # lora_pti-stablediffusion-sagemaker-notebook  
-* Adding Lora-PTI training for Stable Diffusion(a little bit under-fitting), stay tuned...
+* Adding Lora-PTI training for Stable Diffusion(a little bit under-fitting, needs more steps for training) just for fun. 
+* Method comes from [cloneofsimo](https://github.com/cloneofsimo/lora), and the repo is a bit of inactive, so pls use kohya-ss method for Lora training
+
