@@ -13,7 +13,7 @@
 
 # sd-lora-db-finetune-sagemaker-notebook 
 * Use [kohya-ss scripts](https://github.com/kohya-ss/sd-scripts) for Lora fine tuning, which is probably the most popular method for Lora training
-* Examples are character(person) & style trainingg using captions(aka filewords), also add identifier+class method for style training
+* Examples are character(person) & style trainingg using captions(aka filewords), also add identifier+class method for style training(a bit of under-fitting)
 * Training outputs(xxxx.safetensors) can be used directly for sdwebui
 * Check captions of image dataset before you prepare yours, trigger word for character is "wta"
 
