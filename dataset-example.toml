@@ -2,14 +2,14 @@
 
 [general]
 enable_bucket = true
-shuffle_caption = true
-caption_extension = '.txt'
-keep_tokens = 0
 
-# DreamBooth style datasets
+# DreamBooth caption based datasets
 [[datasets]]
 resolution = 512
 batch_size = 2
+shuffle_caption = true
+caption_extension = '.txt'
+keep_tokens = 0
 
   [[datasets.subsets]]
   image_dir = './images/sample1'
@@ -25,7 +25,30 @@ batch_size = 2
 #  class_tokens = 'girl'
 #  num_repeats = 1  
 
-# fine tuning dataset
+
+# DreamBooth class+identifier based datasets
+#[[datasets]]
+#resolution = 512
+#batch_size = 2
+
+#  [[datasets.subsets]]
+#  image_dir = './images/sample1'
+#  class_tokens = 'wta girl'
+#  num_repeats = 10
+
+#  [[datasets.subsets]]
+#  image_dir = './images/sample2'\
+#  class_tokens = 'zyl girl'
+#  num_repeats = 10
+
+#  [[datasets.subsets]]
+#  is_reg = true
+#  image_dir = './images/reg'
+#  class_tokens = 'girl'
+#  num_repeats = 1  
+
+
+# Classic fine tuning based dataset
 #[[datasets]]
 #resolution = [768, 768]
 #batch_size = 2
