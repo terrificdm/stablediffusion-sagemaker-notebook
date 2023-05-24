@@ -1,4 +1,7 @@
-# dreambooth-stablediffusion-sagemaker-notebook  
+# How to use
+* You don't need to git clone the whole repo, just pick up notebook which you want to use and download it to your local computer then upload to SageMaker notebook. RUN codes to go.
+
+## dreambooth-stablediffusion-sagemaker-notebook  
  
 * Can be running on Jupyter Lab of Amazon SageMaker g4dn or g5 notebook instance(xlarge type is enough, 50GB volume size is good to go, use kernel conda_python3).  
 * Tested with Stable Diffusion v1.5 aka "runwayml/stable-diffusion-v1-5". And you can also use the model v2.0 & v2.1. But seemed that v1.5 gained the best results, maybe v2.0+ models need more steps for training, you can try those by yourself.  
@@ -11,16 +14,16 @@
 
 > If you encounter error of "CUDA out of memory..." during training stage, you can simply restart the kernel of Jupyter Notebook, then start your training from the begining  
 
-# sd-lora-db-finetune-sagemaker-notebook 
+## sd-lora-db-finetune-sagemaker-notebook 
 * Use [kohya-ss scripts](https://github.com/kohya-ss/sd-scripts) for Lora fine tuning, which is probably the most popular method for Lora training
 * Examples are character(person) & style trainingg using captions(aka filewords), also add identifier+class method for style training(a bit of under-fitting)
 * Training outputs(xxxx.safetensors) can be used directly for sdwebui
 * Check captions of image dataset before you prepare yours, trigger word for character is "wta"  
 
-# sd-classic-finetune-text2image-notebook
+## sd-classic-finetune-text2image-notebook
 * Classtic fine tuning(aka native text2image fine tuning) example
 * Including multi-gpu training on ml.g5.12xlarge SageMaker notebook instance, which which provides 4 NVIDIA A10G GPUs for parallelized(distributed) training
   
-# sd-classic-finetune-text2image-decoupled-notebook
+## sd-classic-finetune-text2image-decoupled-notebook
 * Similar to "sd-classic-finetune-text2image-notebook", but use SageMaker trining job to decouple pre-processing stage and training stage  
 * Very useful if full model fine tuning will take a long time, and you want to release training resource right after the training, which will save cost
