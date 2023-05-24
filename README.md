@@ -15,12 +15,12 @@
 * Use [kohya-ss scripts](https://github.com/kohya-ss/sd-scripts) for Lora fine tuning, which is probably the most popular method for Lora training
 * Examples are character(person) & style trainingg using captions(aka filewords), also add identifier+class method for style training(a bit of under-fitting)
 * Training outputs(xxxx.safetensors) can be used directly for sdwebui
-* Check captions of image dataset before you prepare yours, trigger word for character is "wta"
-
-# lora_pti-stablediffusion-sagemaker-notebook  
-* Adding Lora-PTI training for Stable Diffusion(a little bit under-fitting, needs more steps for training) just for fun. 
-* Method comes from [cloneofsimo](https://github.com/cloneofsimo/lora), and the repo is a bit of inactive, so pls use kohya-ss method for Lora training
+* Check captions of image dataset before you prepare yours, trigger word for character is "wta"  
 
 # sd-classic-finetune-text2image-notebook
 * Classtic fine tuning(aka native text2image fine tuning) example
 * Including multi-gpu training on ml.g5.12xlarge SageMaker notebook instance, which which provides 4 NVIDIA A10G GPUs for parallelized(distributed) training
+  
+# sd-classic-finetune-text2image-decoupled-notebook
+* Similar to "sd-classic-finetune-text2image-notebook", but use SageMaker trining job to decouple pre-processing stage and training stage  
+* Very useful if full model fine tuning will take a long time, and you want to release training resource right after the training, which will save cost
