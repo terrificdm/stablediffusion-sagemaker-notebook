@@ -22,11 +22,13 @@
 * Training outputs(xxxx.safetensors) can be used directly for sdwebui
 * Check captions of image dataset before you prepare yours, trigger word for character is "wta"  
 
-### sd-classic-finetune-text2image-notebook
+### Classic fine tuning series notebooks  
+
+#### sd-classic-finetune-text2image-notebook
 * Classtic fine tuning(aka native text2image fine tuning) example
 * Including multi-gpu training on ml.g5.12xlarge SageMaker notebook instance, which which provides 4 NVIDIA A10G GPUs for parallelized(distributed) training
   
-### sd-classic-finetune-text2image-decoupled-notebook
+#### sd-classic-finetune-text2image-decoupled-notebook
 * Similar to "sd-classic-finetune-text2image-notebook", but use SageMaker trining job to decouple pre-processing stage and training stage  
 * Very useful if full model fine tuning will take a long time, and you want to release training resource right after the training, which will save cost
 
