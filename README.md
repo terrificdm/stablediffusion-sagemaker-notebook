@@ -33,3 +33,4 @@
 * Very useful if full model fine tuning will take a long time, and you want to release training resource right after the training, which will save cost
 
 ## SDXL model  
+* sdxl-lora-db-finetune-character.ipynb
