@@ -1,7 +1,6 @@
 # How to use
 * You don't need to git clone the whole repo, just pick up notebook which you want to use and download it to your local computer then upload to SageMaker notebook. RUN codes to go.  
 
------------------------------------------------------------------------------------  
 ## SD model 1.x/2.x  
 
 ### dreambooth fine tuning series notebooks  
@@ -30,7 +29,5 @@
 ### sd-classic-finetune-text2image-decoupled-notebook
 * Similar to "sd-classic-finetune-text2image-notebook", but use SageMaker trining job to decouple pre-processing stage and training stage  
 * Very useful if full model fine tuning will take a long time, and you want to release training resource right after the training, which will save cost
-
------------------------------------------------------------------------------------  
 
 ## SDXL model  
