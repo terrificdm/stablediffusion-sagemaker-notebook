@@ -34,7 +34,9 @@
 
 ## SDXL model  
 > Experimental only!
+> "Decoupled" meant training used seperated SageMaker training job.
 
 * sdxl-lora-db-finetune-character.ipynb  
-* sdxl-classic-finetune-text2image-notebook.ipynb.ipynb
-* sdxl-classic-finetune-text2image-decoupled-notebook.ipynb.ipynb
+* sdxl-lora-db-finetune-character-decoupled.ipynb
+* sdxl-classic-finetune-text2image-notebook.ipynb
+* sdxl-classic-finetune-text2image-decoupled-notebook.ipynb
